@@ -1,9 +1,11 @@
-# Where things are
 theme: jekyll-theme-cayman
-repository: curriculeon/curriculeon.github.io
+title: Jekyll and Reveal.js
+description: A framework for easily creating beautiful presentations using HTML
+author: curriculeon
 
+# Where things are
 source              : .
-destination         : ./../src/main/assets/static
+destination         : ./../src/main/resources/static
 collections_dir     : .
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
@@ -73,61 +75,3 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
-
-
-
-
-
-
-
-
-
-
-
-# ------------ RevealJS Configuration ------------
-
-# Your presentation title
-title: Jekyll and Reveal.js
-
-# Your presentation description (optional)
-description: A framework for easily creating beautiful presentations using HTML
-
-# Your name (optional)
-author: jekyll-revealjs contributors
-
-# The Reveal theme
-reveal_theme: black.css
-
-# The Reveal transition
-reveal_transition: default
-
-# Path to the used theme (defaults to the Reveal.js standard theme path)
-reveal_theme_path: assets/reveal.js/css/theme/ 
-
-
-# Custom CSS for highlighting (defaults to reveal.js/lib/css/zenburn.css)
-highlight_style_sheet: assets/reveal.js/lib/css/zenburn.css
-
-# Embed Server-side speaker notes?
-reveal_notes_server: false
-
-# Additional reveal.js options
-reveal_options: 
-
-# Additional reveal.js dependencies
-reveal_dependencies: 
-
-# Reveal.js subdirectory
-reveal_path: assets/reveal.js/
-
-# Exclude directories and/or files from the conversion
-exclude:
-  - Gemfile*
-  - LICENSE
-  - README.md
-
-# Don't change anything below
-markdown: kramdown
-highlighter: rouge
-markdown_ext: ignoreme
-
