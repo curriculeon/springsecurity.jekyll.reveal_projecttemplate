@@ -3,7 +3,7 @@ theme: jekyll-theme-cayman
 repository: curriculeon/curriculeon.github.io
 
 source              : .
-destination         : ./../src/main/assets/static
+destination         : ./../src/main/resources/static
 collections_dir     : .
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
@@ -102,11 +102,10 @@ reveal_theme: black.css
 reveal_transition: default
 
 # Path to the used theme (defaults to the Reveal.js standard theme path)
-reveal_theme_path: assets/reveal.js/css/theme/ 
-
+reveal_theme_path: /assets/reveal.js/css/theme/ 
 
 # Custom CSS for highlighting (defaults to reveal.js/lib/css/zenburn.css)
-highlight_style_sheet: assets/reveal.js/lib/css/zenburn.css
+highlight_style_sheet: /assets/reveal.js/lib/css/zenburn.css
 
 # Embed Server-side speaker notes?
 reveal_notes_server: false
@@ -118,7 +117,7 @@ reveal_options:
 reveal_dependencies: 
 
 # Reveal.js subdirectory
-reveal_path: assets/reveal.js/
+reveal_path: /assets/reveal.js/
 
 # Exclude directories and/or files from the conversion
 exclude:
