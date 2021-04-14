@@ -10,19 +10,20 @@ mvn package
 
 
 #----------- Docker Destroy ------------
+containerName="springsecurity-jekyll"
 # stop all running containers
-docker stop $(docker ps -a -q)
+docker container stop $containerName
 
 # delete all stopped containers
-docker rm $(docker ps -a -q)
+docker container rm $containerName
 
 # delete all images whose containers are stopped
-docker system prune -all --force
+docker system prune -a --force
 
 
 #----------- Docker Build ------------
 # build new image
-docker image build -t springsecurity-jekyll .
+docker image build -t $containerName .
 
 # run new container from image
-docker container run --name springsecurity-jekyll-container -p 8081:8080 -d springsecurity-jekyll
+docker container run --name $containerName-container -p 8081:8080 -d $containerName

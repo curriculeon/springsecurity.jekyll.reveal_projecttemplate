@@ -3,7 +3,7 @@ theme: jekyll-theme-cayman
 repository: curriculeon/curriculeon.github.io
 
 source              : .
-destination         : ./../src/main/assets/static
+destination         : ./../src/main/resources/static
 collections_dir     : .
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
 layouts_dir         : _layouts
