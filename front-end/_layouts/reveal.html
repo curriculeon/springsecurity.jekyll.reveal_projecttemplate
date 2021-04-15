@@ -19,7 +19,7 @@
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
-			document.write( '<link rel="stylesheet" href="{{ "/assets/reveal.js/css/print/" | relative_url"}}' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+			document.write( '<link rel="stylesheet" href="{{ "/assets/reveal.js/css/print/" | relative_url}}"' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
 		<!--[if lt IE 9]>
@@ -79,16 +79,16 @@
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: '{{ "/assets/reveal.js/lib/js/classList.js" }}', condition: function() { return !document.body.classList; } },
-					{ src: '{{ "/assets/reveal.js/plugin/markdown/marked.js" }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '{{ "/assets/reveal.js/plugin/markdown/markdown.js" }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: '{{ "/assets/reveal.js/plugin/highlight/highlight.js" }}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: '{{ "/assets/reveal.js/plugin/zoom-js/zoom.js" }}', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '{{ "/assets/reveal.js/lib/js/classList.js" | relative_url }}', condition: function() { return !document.body.classList; } },
+					{ src: '{{ "/assets/reveal.js/plugin/markdown/marked.js" | relative_url  }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '{{ "/assets/reveal.js/plugin/markdown/markdown.js" | relative_url  }}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '{{ "/assets/reveal.js/plugin/highlight/highlight.js" | relative_url  }}', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '{{ "/assets/reveal.js/plugin/zoom-js/zoom.js" | relative_url  }}', async: true, condition: function() { return !!document.body.classList; } },
 					{% if site.reveal_notes_server %}
-					{ src: '{{ "/assets/reveal.js/socket.io/socket.io.js" }}', async: true },
-					{ src: '{{ "/assets/reveal.js/plugin/notes-server/client.js" }}', async: true }
+					{ src: '{{ "/assets/reveal.js/socket.io/socket.io.js" | relative_url  }}', async: true },
+					{ src: '{{ "/assets/reveal.js/plugin/notes-server/client.js" | relative_url  }}', async: true }
 					{% else %}
-					{ src: '{{ "/assets/reveal.js/plugin/notes/notes.js" }}', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: '{{ "/assets/reveal.js/plugin/notes/notes.js" | relative_url  }}', async: true, condition: function() { return !!document.body.classList; } }
 					{% endif %}
 					{% if site.reveal_dependencies %}
 					, {{ site.reveal_dependencies }}
