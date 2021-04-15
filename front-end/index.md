@@ -9,4 +9,3 @@ title: "Curriculeon Jekyll Spring Security Project Template!"
 * Click [here](./sample-directory/another-page-to-link-to.md) to view another page in another directory!
 * Click [here](./sample-directory/layout-example-default.md) to view the `default` layout theme!
 * Click [here](./sample-directory/layout-example-revealjs.md) to view the `RevealJS` layout theme!
-* Click [here](./_slides/layout-example-revealjs.md) to view the `RevealJS` layout theme!
