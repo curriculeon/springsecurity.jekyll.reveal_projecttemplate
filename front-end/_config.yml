@@ -75,38 +75,3 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
-
-
-  
-# The Reveal theme
-reveal_theme: black.css
-
-# The Reveal transition
-reveal_transition: default
-
-# Path to the used theme (defaults to the Reveal.js standard theme path)
-reveal_theme_path: assets/reveal.js/css/theme/ 
-
-# Additional custom CSS paths
-extra_css: 
-
-# Custom CSS for highlighting (defaults to reveal.js/lib/css/zenburn.css)
-highlight_style_sheet: assets/reveal.js/lib/css/zenburn.css
-
-# Embed Server-side speaker notes?
-reveal_notes_server: false
-
-# Additional reveal.js options
-reveal_options: 
-
-# Additional reveal.js dependencies
-reveal_dependencies: 
-
-# Reveal.js subdirectory
-reveal_path: assets/reveal.js/
-
-# Exclude directories and/or files from the conversion
-exclude:
-  - Gemfile*
-  - LICENSE
-  - README.md

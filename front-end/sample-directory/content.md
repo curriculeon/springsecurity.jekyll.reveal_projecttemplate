@@ -6,9 +6,6 @@ layout: reveal
 * The Quick Brown Fox _jumps_ over the `Lazy Dog`.
 
 
-
-
-
 -
 -
 ## Slide it!

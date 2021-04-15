@@ -32,9 +32,19 @@
 		<div class="reveal">
 
 			<div class="slides">
+				
+				<section>
+					<!-- This logo is used in every copy of this file. Drop a new file
+					into img/Logo.jpg to change it across all slide decks -->
+					<img src="{{ "/assets/reveal.js/img/logo.png" | relative_url }}" >
+				</section>
 
-				{% for post in site.posts reversed %}
-				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+
+				{% for post in site.slides reversed %}
+				<section data-markdown
+         			data-separator="^\n-\n-\n"
+         			data-separator-vertical="^\n-\n"
+         			data-separator-notes="^Note:">
 					<script type="text/template">
 {%
 						assign lines = post.content | newline_to_br | strip_newlines | split: "<br />"
@@ -73,6 +83,7 @@
 
 		<script src="{{ "/assets/reveal.js/lib/js/head.min.js" | relative_url }}"></script>
 		<script src="{{ "/assets/reveal.js/js/reveal.js" | relative_url }}"></script>
+		<script src="{{ "/assets/reveal.js/js/curriculeon-reveal.js" | relative_url }}"></script>
 
 		<script>
 
@@ -84,7 +95,6 @@
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				{% if site.reveal_options %}
